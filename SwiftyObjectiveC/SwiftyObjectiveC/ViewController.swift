@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
         
     
-        DBTwitterService.sharedClient().getTweets ( { (products, error) -> Void in
+        DBAccountService.sharedClient().getAccounts ( { (products, error) -> Void in
             
         })
         

@@ -10,7 +10,6 @@
 		036AC1E51BF460C900D1227E /* PrettyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 036AC1E41BF460C900D1227E /* PrettyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		036AC1EC1BF460C900D1227E /* PrettyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036AC1E11BF460C900D1227E /* PrettyKit.framework */; };
 		036AC1F11BF460C900D1227E /* PrettyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AC1F01BF460C900D1227E /* PrettyKitTests.swift */; };
-		03E478A71BF4713D0021D263 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E478A61BF4713D0021D263 /* UIKit.framework */; };
 		03E478BF1BF472D60021D263 /* InlineCellAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E478B81BF472D60021D263 /* InlineCellAttributes.swift */; };
 		03E478C01BF472D60021D263 /* InlineCellBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E478B91BF472D60021D263 /* InlineCellBase.swift */; };
 		03E478C11BF472D60021D263 /* InlineGenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E478BA1BF472D60021D263 /* InlineGenericCell.xib */; };
@@ -39,7 +38,6 @@
 		036AC1F01BF460C900D1227E /* PrettyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyKitTests.swift; sourceTree = "<group>"; };
 		036AC1F21BF460C900D1227E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E478A51BF470AC0021D263 /* InlineDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InlineDemo.playground; sourceTree = "<group>"; };
-		03E478A61BF4713D0021D263 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03E478B81BF472D60021D263 /* InlineCellAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InlineCellAttributes.swift; path = "untitled folder/InlineCellAttributes.swift"; sourceTree = "<group>"; };
 		03E478B91BF472D60021D263 /* InlineCellBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InlineCellBase.swift; path = "untitled folder/InlineCellBase.swift"; sourceTree = "<group>"; };
 		03E478BA1BF472D60021D263 /* InlineGenericCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InlineGenericCell.xib; path = "untitled folder/InlineGenericCell.xib"; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E478A71BF4713D0021D263 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +70,6 @@
 		036AC1D71BF460C900D1227E = {
 			isa = PBXGroup;
 			children = (
-				03E478A61BF4713D0021D263 /* UIKit.framework */,
 				036AC1E31BF460C900D1227E /* PrettyKit */,
 				036AC1EF1BF460C900D1227E /* PrettyKitTests */,
 				036AC1E21BF460C900D1227E /* Products */,

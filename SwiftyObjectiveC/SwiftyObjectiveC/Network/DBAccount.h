@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DBTweet : NSObject
+@interface DBAccount : NSObject
 
-@property (copy, nonatomic) NSString *tweet;
-@property (copy, nonatomic) NSString *username;
-@property (copy, nonatomic) NSDate *timeStamp;
+@property (copy, nonatomic) NSString *accountId;
+@property (copy, nonatomic) NSString *balance;
 
 @end

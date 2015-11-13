@@ -6,8 +6,8 @@
 //  Copyright © 2015 Erik Kerber. All rights reserved.
 //
 
-#import "DBTweet.h"
+#import "DBAccount.h"
 
-@implementation DBTweet
+@implementation DBAccount
 
 @end

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033BDF5F1BF47AD60018F5A2 /* PrettyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033BDF5E1BF47AD60018F5A2 /* PrettyKit.framework */; };
-		03428C1F1BE85E9100704898 /* DBTwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03428C1E1BE85E9100704898 /* DBTwitterService.m */; };
+		03428C1F1BE85E9100704898 /* DBAccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03428C1E1BE85E9100704898 /* DBAccountService.m */; };
 		036474EE1BE8683E005DCA8B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 036474DC1BE8683E005DCA8B /* AFHTTPRequestOperation.m */; };
 		036474EF1BE8683E005DCA8B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 036474DE1BE8683E005DCA8B /* AFHTTPRequestOperationManager.m */; };
 		036474F01BE8683E005DCA8B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 036474E01BE8683E005DCA8B /* AFHTTPSessionManager.m */; };
@@ -24,8 +23,15 @@
 		038837391BE706A80041DC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038837381BE706A80041DC6A /* Assets.xcassets */; };
 		0388373C1BE706A80041DC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0388373A1BE706A80041DC6A /* LaunchScreen.storyboard */; };
 		038837471BE706A80041DC6A /* SwiftyObjectiveCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038837461BE706A80041DC6A /* SwiftyObjectiveCTests.swift */; };
-		038837521BE706A80041DC6A /* SwiftyObjectiveCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038837511BE706A80041DC6A /* SwiftyObjectiveCUITests.swift */; };
-		03E478821BF46B200021D263 /* DBTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E478811BF46B200021D263 /* DBTweet.m */; };
+		039A81631BF652C0001BEA34 /* SwiftyAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A81621BF652C0001BEA34 /* SwiftyAccountService.swift */; };
+		03E478821BF46B200021D263 /* DBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E478811BF46B200021D263 /* DBAccount.m */; };
+		03F55F7E1BF586F800E2C66E /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F55F7D1BF586F800E2C66E /* AccountType.swift */; };
+		03F55F881BF6349700E2C66E /* CheckingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F55F871BF6349700E2C66E /* CheckingAccount.swift */; };
+		03F55F8A1BF634A100E2C66E /* CreditAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F55F891BF634A100E2C66E /* CreditAccount.swift */; };
+		03F55F931BF63EDF00E2C66E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F55F921BF63EDF00E2C66E /* Quick.framework */; };
+		03F55F951BF63F0400E2C66E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F55F941BF63F0400E2C66E /* Nimble.framework */; };
+		03F55F971BF63F6E00E2C66E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03F55F941BF63F0400E2C66E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03F55F981BF63F6E00E2C66E /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03F55F921BF63EDF00E2C66E /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +42,26 @@
 			remoteGlobalIDString = 0388372D1BE706A70041DC6A;
 			remoteInfo = SwiftyObjectiveC;
 		};
-		0388374E1BE706A80041DC6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 038837261BE706A70041DC6A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0388372D1BE706A70041DC6A;
-			remoteInfo = SwiftyObjectiveC;
-		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		03F55F961BF63F6500E2C66E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03F55F971BF63F6E00E2C66E /* Nimble.framework in CopyFiles */,
+				03F55F981BF63F6E00E2C66E /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		033BDF5E1BF47AD60018F5A2 /* PrettyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PrettyKit.framework; path = "../PrettyKit/build/Debug-iphoneos/PrettyKit.framework"; sourceTree = "<group>"; };
 		03428C1C1BE85E9100704898 /* SwiftyObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
-		03428C1D1BE85E9100704898 /* DBTwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTwitterService.h; sourceTree = "<group>"; };
-		03428C1E1BE85E9100704898 /* DBTwitterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTwitterService.m; sourceTree = "<group>"; };
+		03428C1D1BE85E9100704898 /* DBAccountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccountService.h; sourceTree = "<group>"; };
+		03428C1E1BE85E9100704898 /* DBAccountService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccountService.m; sourceTree = "<group>"; };
 		036474DB1BE8683E005DCA8B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		036474DC1BE8683E005DCA8B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		036474DD1BE8683E005DCA8B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -79,11 +91,16 @@
 		038837421BE706A80041DC6A /* SwiftyObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		038837461BE706A80041DC6A /* SwiftyObjectiveCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyObjectiveCTests.swift; sourceTree = "<group>"; };
 		038837481BE706A80041DC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0388374D1BE706A80041DC6A /* SwiftyObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		038837511BE706A80041DC6A /* SwiftyObjectiveCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyObjectiveCUITests.swift; sourceTree = "<group>"; };
 		038837531BE706A80041DC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03E478801BF46B200021D263 /* DBTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTweet.h; sourceTree = "<group>"; };
-		03E478811BF46B200021D263 /* DBTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTweet.m; sourceTree = "<group>"; };
+		039A81621BF652C0001BEA34 /* SwiftyAccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyAccountService.swift; sourceTree = "<group>"; };
+		03E478801BF46B200021D263 /* DBAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccount.h; sourceTree = "<group>"; };
+		03E478811BF46B200021D263 /* DBAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccount.m; sourceTree = "<group>"; };
+		03F55F7D1BF586F800E2C66E /* AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		03F55F871BF6349700E2C66E /* CheckingAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckingAccount.swift; sourceTree = "<group>"; };
+		03F55F891BF634A100E2C66E /* CreditAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditAccount.swift; sourceTree = "<group>"; };
+		03F55F921BF63EDF00E2C66E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
+		03F55F941BF63F0400E2C66E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033BDF5F1BF47AD60018F5A2 /* PrettyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0388374A1BE706A80041DC6A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				03F55F931BF63EDF00E2C66E /* Quick.framework in Frameworks */,
+				03F55F951BF63F0400E2C66E /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +126,8 @@
 		03428C201BE8600700704898 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				03F55F941BF63F0400E2C66E /* Nimble.framework */,
+				03F55F921BF63EDF00E2C66E /* Quick.framework */,
 				036474DA1BE86823005DCA8B /* AFNetworking */,
 			);
 			path = Vendor;
@@ -149,6 +162,7 @@
 		036474F71BE86A39005DCA8B /* SwiftyNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				039A81621BF652C0001BEA34 /* SwiftyAccountService.swift */,
 			);
 			name = SwiftyNetwork;
 			sourceTree = "<group>";
@@ -156,7 +170,6 @@
 		038837251BE706A70041DC6A = {
 			isa = PBXGroup;
 			children = (
-				033BDF5E1BF47AD60018F5A2 /* PrettyKit.framework */,
 				038837301BE706A80041DC6A /* SwiftyObjectiveC */,
 				038837451BE706A80041DC6A /* SwiftyObjectiveCTests */,
 				038837501BE706A80041DC6A /* SwiftyObjectiveCUITests */,
@@ -169,7 +182,6 @@
 			children = (
 				0388372E1BE706A70041DC6A /* SwiftyObjectiveC.app */,
 				038837421BE706A80041DC6A /* SwiftyObjectiveCTests.xctest */,
-				0388374D1BE706A80041DC6A /* SwiftyObjectiveCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +189,7 @@
 		038837301BE706A80041DC6A /* SwiftyObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				03F55F7C1BF586E300E2C66E /* Accounts */,
 				036474F71BE86A39005DCA8B /* SwiftyNetwork */,
 				03428C201BE8600700704898 /* Vendor */,
 				0388375F1BE713470041DC6A /* Network */,
@@ -184,8 +197,8 @@
 				038837331BE706A80041DC6A /* ViewController.swift */,
 				038837351BE706A80041DC6A /* Main.storyboard */,
 				038837381BE706A80041DC6A /* Assets.xcassets */,
-				0388373A1BE706A80041DC6A /* LaunchScreen.storyboard */,
 				03428C1C1BE85E9100704898 /* SwiftyObjectiveC-Bridging-Header.h */,
+				0388373A1BE706A80041DC6A /* LaunchScreen.storyboard */,
 				0388373D1BE706A80041DC6A /* Info.plist */,
 			);
 			path = SwiftyObjectiveC;
@@ -212,12 +225,22 @@
 		0388375F1BE713470041DC6A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				03428C1D1BE85E9100704898 /* DBTwitterService.h */,
-				03428C1E1BE85E9100704898 /* DBTwitterService.m */,
-				03E478801BF46B200021D263 /* DBTweet.h */,
-				03E478811BF46B200021D263 /* DBTweet.m */,
+				03428C1D1BE85E9100704898 /* DBAccountService.h */,
+				03428C1E1BE85E9100704898 /* DBAccountService.m */,
+				03E478801BF46B200021D263 /* DBAccount.h */,
+				03E478811BF46B200021D263 /* DBAccount.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		03F55F7C1BF586E300E2C66E /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				03F55F7D1BF586F800E2C66E /* AccountType.swift */,
+				03F55F871BF6349700E2C66E /* CheckingAccount.swift */,
+				03F55F891BF634A100E2C66E /* CreditAccount.swift */,
+			);
+			name = Accounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +270,7 @@
 				0388373E1BE706A80041DC6A /* Sources */,
 				0388373F1BE706A80041DC6A /* Frameworks */,
 				038837401BE706A80041DC6A /* Resources */,
+				03F55F961BF63F6500E2C66E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -257,24 +281,6 @@
 			productName = SwiftyObjectiveCTests;
 			productReference = 038837421BE706A80041DC6A /* SwiftyObjectiveCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0388374C1BE706A80041DC6A /* SwiftyObjectiveCUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0388375C1BE706A80041DC6A /* Build configuration list for PBXNativeTarget "SwiftyObjectiveCUITests" */;
-			buildPhases = (
-				038837491BE706A80041DC6A /* Sources */,
-				0388374A1BE706A80041DC6A /* Frameworks */,
-				0388374B1BE706A80041DC6A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0388374F1BE706A80041DC6A /* PBXTargetDependency */,
-			);
-			name = SwiftyObjectiveCUITests;
-			productName = SwiftyObjectiveCUITests;
-			productReference = 0388374D1BE706A80041DC6A /* SwiftyObjectiveCUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -290,10 +296,6 @@
 						CreatedOnToolsVersion = 7.1;
 					};
 					038837411BE706A80041DC6A = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 0388372D1BE706A70041DC6A;
-					};
-					0388374C1BE706A80041DC6A = {
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 0388372D1BE706A70041DC6A;
 					};
@@ -314,7 +316,6 @@
 			targets = (
 				0388372D1BE706A70041DC6A /* SwiftyObjectiveC */,
 				038837411BE706A80041DC6A /* SwiftyObjectiveCTests */,
-				0388374C1BE706A80041DC6A /* SwiftyObjectiveCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,13 +338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0388374B1BE706A80041DC6A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,17 +346,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				036474EE1BE8683E005DCA8B /* AFHTTPRequestOperation.m in Sources */,
+				03F55F7E1BF586F800E2C66E /* AccountType.swift in Sources */,
 				038837341BE706A80041DC6A /* ViewController.swift in Sources */,
 				036474EF1BE8683E005DCA8B /* AFHTTPRequestOperationManager.m in Sources */,
 				036474F11BE8683E005DCA8B /* AFNetworkReachabilityManager.m in Sources */,
 				036474F51BE8683E005DCA8B /* AFURLResponseSerialization.m in Sources */,
-				03E478821BF46B200021D263 /* DBTweet.m in Sources */,
+				03E478821BF46B200021D263 /* DBAccount.m in Sources */,
 				036474F31BE8683E005DCA8B /* AFURLConnectionOperation.m in Sources */,
 				036474F21BE8683E005DCA8B /* AFSecurityPolicy.m in Sources */,
+				03F55F881BF6349700E2C66E /* CheckingAccount.swift in Sources */,
 				036474F01BE8683E005DCA8B /* AFHTTPSessionManager.m in Sources */,
 				036474F41BE8683E005DCA8B /* AFURLRequestSerialization.m in Sources */,
 				036474F61BE8683E005DCA8B /* AFURLSessionManager.m in Sources */,
-				03428C1F1BE85E9100704898 /* DBTwitterService.m in Sources */,
+				03428C1F1BE85E9100704898 /* DBAccountService.m in Sources */,
+				03F55F8A1BF634A100E2C66E /* CreditAccount.swift in Sources */,
+				039A81631BF652C0001BEA34 /* SwiftyAccountService.swift in Sources */,
 				038837321BE706A80041DC6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,14 +373,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		038837491BE706A80041DC6A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				038837521BE706A80041DC6A /* SwiftyObjectiveCUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -390,11 +380,6 @@
 			isa = PBXTargetDependency;
 			target = 0388372D1BE706A70041DC6A /* SwiftyObjectiveC */;
 			targetProxy = 038837431BE706A80041DC6A /* PBXContainerItemProxy */;
-		};
-		0388374F1BE706A80041DC6A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0388372D1BE706A70041DC6A /* SwiftyObjectiveC */;
-			targetProxy = 0388374E1BE706A80041DC6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,6 +489,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyObjectiveC/Vendor",
+				);
 				INFOPLIST_FILE = SwiftyObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveC;
@@ -518,6 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyObjectiveC/Vendor",
+				);
 				INFOPLIST_FILE = SwiftyObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveC;
@@ -530,6 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyObjectiveC/Vendor",
+				);
 				INFOPLIST_FILE = SwiftyObjectiveCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveCTests;
@@ -542,35 +539,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftyObjectiveC/Vendor",
+				);
 				INFOPLIST_FILE = SwiftyObjectiveCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyObjectiveC.app/SwiftyObjectiveC";
-			};
-			name = Release;
-		};
-		0388375D1BE706A80041DC6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SwiftyObjectiveCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SwiftyObjectiveC;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		0388375E1BE706A80041DC6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SwiftyObjectiveCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.distilledbits.SwiftyObjectiveCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SwiftyObjectiveC;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -600,15 +577,6 @@
 			buildConfigurations = (
 				0388375A1BE706A80041DC6A /* Debug */,
 				0388375B1BE706A80041DC6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0388375C1BE706A80041DC6A /* Build configuration list for PBXNativeTarget "SwiftyObjectiveCUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0388375D1BE706A80041DC6A /* Debug */,
-				0388375E1BE706A80041DC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
